@@ -1,0 +1,72 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--jQuery 3.2.1-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!--Angular 1.6.1-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+
+	<!--Angular animate 1.6.1-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.js"></script>
+
+	<!--Bootstrap 3.3.7-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Angular Bootstrap 2.5.0-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+
+	<!--Javascript-->
+	<script src="javascript/jyutpingApp.js"></script>
+	<script src="javascript/JyutpingModalService.js"></script>
+	<script src="javascript/JyutpingService.js"></script>
+	<script src="javascript/TableScrollDirectives.js"></script>
+	<script src="javascript/HighlightRowColDirective.js"></script>
+	<script src="javascript/SampleWordsValue.js"></script>
+	<script src="javascript/SampleWordsService.js"></script>
+
+	<!-- CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Alice|Crimson+Text" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/earlyaccess/cwtexkai.css" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet"> -->
+	
+	
+	<link href="css/jyutpingApp.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="JyutpingApp" ng-controller="JyutpingAppCtrl">
+	<!-- Jyutping initials -->
+	<table class="table table-bordered" id="jyutping-initials" fix-initials-vertical-scroll>
+		<tr class="fixed-initials-row" id="initials-row">
+			<th ng-repeat="initial in initials track by $index">{{initial}}</th>
+		</tr>
+	</table>
+
+	<!-- Jyutping finals -->
+	<table class="table table-bordered" id="jyutping-finals" fix-finals-horizontal-scroll>
+		<tr> 
+			<th class="fixed-initials-column">&nbsp;</th>
+		</tr>
+		<tr ng-repeat="final in finals track by $index" ng-if="$index > 0">
+			<th class="fixed-initials-column">{{finals[$index]}}</th>	
+		</tr>
+	</table>
+
+	<!-- Jyutping body -->
+	<table class="table table-bordered" id="jyutping-body">
+		<tr ng-repeat="final in finals track by $index" ng-if="$index > 0">
+			<td ng-repeat="initial in initials track by $index" ng-if="$index > 0" ng-class="{{$index == 1 ? 'first-row-padding' : ''}}" row="{{$parent.$parent.$index}}" col="{{$index}}" highlight-row-col>
+
+				<span ng-click="openJyutpingModal(initial + final)">
+					<a>
+						{{(jyutpingIsEmpty(initial + final)) ? initial + final : "&nbsp;"}}
+					</a>
+				</span>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

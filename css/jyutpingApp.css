@@ -1,0 +1,148 @@
+/*
+ *	@template	jyutping.html
+ */
+
+td, th {
+	min-width: 75px;
+	min-height: 40px;
+	background-color: white;
+	font-family: "Crimson Text", sans-serif;
+	font-size: 18px;
+}
+
+button {
+	outline: none !important;
+}
+
+a {
+	color: #887d7e;
+}
+
+#jyutping-initials {
+	margin-bottom: 0px;
+	height: 40px;
+}
+
+.fixed-initials-row {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+}
+
+.fixed-initials-row th, .fixed-initials-column  {
+	background-color: #e41b14;
+	color: white;
+	font-family: "Alice", sans-serif;
+}
+
+#jyutping-body {
+	position: relative;
+	top: 2px;
+	left: 75px;
+	z-index: 10;
+	margin-bottom: 0px;
+}
+
+#jyutping-finals {
+	width: 40px;
+	position: fixed; 
+	top: 0px;
+	left: 0px;
+	z-index: 50;
+	margin-bottom: 0px;
+}
+
+/**
+ *	@template	JyutpingModal.html
+ */
+#individual-sound {
+	width: 100%;
+	min-height: 150px;
+	font-size: 48px;
+	margin: 20px 0px;
+	padding: 30px;
+	text-align: center;
+}
+
+#sample-word {
+	width: 100%;
+	min-height: 150px;
+	margin: 20px 0px;
+	padding: 30px;
+	text-align: center;
+}
+
+#sample-chinese {
+	font-size: 48px;
+	/*font-weight: bold;*/
+}
+
+#sample-jyutping, #sample-english {
+	font-size: 30px;
+}
+
+.modal-style {
+	padding: 0px 20px;
+	font-family: "Crimson Text", "cwTeXKai", sans-serif;
+	/*font-family: "Crimson Text", "Noto Sans TC", sans-serif;*/
+	
+}
+
+.center-in-div {
+	text-align: center;
+}
+
+.button-right {
+	text-align: right;
+}
+
+.jyutping-tones {
+	float: right;
+}
+
+.tones-tooltip-position {
+	right: 5px;
+	font-size: 15px;
+}
+
+.individual-tooltip-position {
+	top: -5px;
+	left: -5px;
+	font-size: 15px;
+}
+
+.word-tooltip-position {
+	top: -5px;
+	left: 5px;
+	font-size: 15px;
+}
+
+.modal-header-style {
+	background-color: #e41b14;
+	color: white;
+	padding: 10px 20px 20px 20px;
+	margin: 0px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.btn[disabled] {
+	opacity: 1;
+	background: rgb(222, 222, 222);
+}
+
+.cantolounge-logo {
+	float: left;
+	height: 30px;
+	margin-top: -5px;
+}
+
+.function-buttons-row {
+	margin-bottom: 20px;
+}
+
+.btn-default[disabled]:hover {
+	background-color: #eaeaea;
+}

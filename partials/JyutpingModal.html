@@ -1,0 +1,42 @@
+<div class="modal-style modal-header-style">
+	<h3>
+		<span>{{jyutping}}</span>
+		<div class="jyutping-tones">
+			<span class="glyphicon glyphicon-question-sign tones-tooltip-position" tooltip-placement="left" uib-tooltip="{{tonesMessage}}"></span>
+			<div class="btn-group" role="group">
+			  <button type="button" class="btn btn-default" ng-click="toggleTone(1)" ng-disabled="!getSampleWord(jyutping, '1')">1</button>
+			  <button type="button" class="btn btn-default" ng-click="toggleTone(2)" ng-disabled="!getSampleWord(jyutping, '2')">2</button>
+			  <button type="button" class="btn btn-default" ng-click="toggleTone(3)" ng-disabled="!getSampleWord(jyutping, '3')">3</button>
+			  <button type="button" class="btn btn-default" ng-click="toggleTone(4)" ng-disabled="!getSampleWord(jyutping, '4')">4</button>
+			  <button type="button" class="btn btn-default" ng-click="toggleTone(5)" ng-disabled="!getSampleWord(jyutping, '5')">5</button>
+			  <button type="button" class="btn btn-default" ng-click="toggleTone(6)" ng-disabled="!getSampleWord(jyutping, '6')">6</button>
+			</div>
+		</div>
+	</h3>
+</div>
+
+<!-- uncomment this in when done with individual sounds later -->
+<!-- <div class="modal-style center-in-div">	
+	<div class="btn-group" role="group">
+	  <button type="button" class="btn btn-default" ng-click="toggleIndividual()" ng-disabled="true">Individual</button>
+	  <button type="button" class="btn btn-default" ng-click="toggleWord()">Word</button>
+	</div>
+</div> -->
+
+<div class="modal-style center-in-div" id="individual-sound" ng-show="false" ng-click="testAudio()">	
+<!-- <div class="modal-style center-in-div" id="individual-sound" ng-show="displayIndividual" ng-click="testAudio()">	 -->
+	{{jyutping + tone}} <span class="glyphicon glyphicon-question-sign individual-tooltip-position" tooltip-placement="right" uib-tooltip="{{individualMessage}}"></span>
+</div>
+<div class="modal-style" id="sample-word" ng-show="displayWord">	
+	<p id="sample-chinese" ng-click="playAudio(getSampleWord(jyutping, tone)['chinese'])">{{getSampleWord(jyutping, tone)["chinese"]}} <span class="glyphicon glyphicon-question-sign word-tooltip-position" tooltip-placement="right" uib-tooltip="{{wordMessage}}"></span></p>
+	<p id="sample-jyutping">{{getSampleWord(jyutping, tone)["jyutping"]}}</p>
+	<p id="sample-english">{{getSampleWord(jyutping, tone)["english"]}}</p>
+</div>
+<div class="modal-style function-buttons-row">
+	<div class="cantolounge-logo">
+		<a href="https://cantolounge.com/jyutping-home"><img src="images/Cantolounge.png" height="40"/></a>
+	</div>
+	<div class="button-right">
+     <button class='btn btn-default' ng-click='cancel()'>Close</button>
+     </div>
+</div>
