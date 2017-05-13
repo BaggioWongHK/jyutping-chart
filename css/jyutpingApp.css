@@ -1,4 +1,12 @@
 /*
+ *	@template	index.html
+ */
+#jyutping-table-layer {
+	width: 1px;
+	min-width: 100%;
+}
+
+/*
  *	@template	jyutping.html
  */
 
