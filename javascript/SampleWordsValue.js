@@ -24875,7 +24875,51 @@ var sampleWords = {
 			"jyutping": "zyut6 deoi3",
 			"english": "absolute"
 		}
-	}
+	},
+	"deu": {
+		"1": {
+			"chinese": ""
+		},
+		"2": {
+			"chinese": ""
+		},
+		"3": {
+			"chinese": ""
+		},
+		"4": {
+			"chinese": ""
+		},
+		"5": {
+			"chinese": ""
+		},
+		"6": {
+			"chinese": "掉",
+			"jyutping": "deu6",
+			"english": "to throw away"
+		}
+	},
+	"lem": {
+		"1": {
+			"chinese": ""
+		},
+		"2": {
+			"chinese": "舔",
+			"jyutping": "lem2",
+			"english": "to lick"
+		},
+		"3": {
+			"chinese": ""
+		},
+		"4": {
+			"chinese": ""
+		},
+		"5": {
+			"chinese": ""
+		},
+		"6": {
+			"chinese": ""
+		}
+	},
 };
 
 	return sampleWords;
