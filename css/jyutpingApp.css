@@ -1,4 +1,11 @@
 /*
+ *	@template	all
+ */
+a:focus {
+	outline: none;
+}
+
+/*
  *	@template	index.html
  */
 #jyutping-table-layer {

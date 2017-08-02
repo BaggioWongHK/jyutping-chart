@@ -62,7 +62,7 @@
 				<td ng-repeat="initial in initials track by $index" ng-if="$index > 0" ng-class="{{$index == 1 ? 'first-row-padding' : ''}}" row="{{$parent.$parent.$index}}" col="{{$index}}" highlight-row-col>
 
 					<span ng-click="openJyutpingModal(initial + final)">
-						<a>
+						<a href="#">
 							{{(jyutpingIsEmpty(initial + final)) ? initial + final : "&nbsp;"}}
 						</a>
 					</span>
