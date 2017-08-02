@@ -28,7 +28,12 @@
 	{{jyutping + tone}} <span class="glyphicon glyphicon-question-sign individual-tooltip-position" tooltip-placement="right" uib-tooltip="{{individualMessage}}"></span>
 </div>
 <div class="modal-style" id="sample-word" ng-show="displayWord">	
-	<p id="sample-chinese" ng-click="playAudio(getSampleWord(jyutping, tone)['chinese'])">{{getSampleWord(jyutping, tone)["chinese"]}} <span class="glyphicon glyphicon-question-sign word-tooltip-position" tooltip-placement="right" uib-tooltip="{{wordMessage}}"></span></p>
+	<p id="sample-chinese" ng-click="playAudio(getSampleWord(jyutping, tone)['chinese'])">
+	<a href="#">
+		{{getSampleWord(jyutping, tone)["chinese"]}} 
+	</a>
+		<span class="glyphicon glyphicon-hand-up word-tooltip-position" tooltip-placement="bottom" uib-tooltip="{{wordMessage}}"></span>
+	</p>
 	<p id="sample-jyutping">{{getSampleWord(jyutping, tone)["jyutping"]}}</p>
 	<p id="sample-english">{{getSampleWord(jyutping, tone)["english"]}}</p>
 </div>

@@ -104,6 +104,24 @@ a {
 	
 }
 
+.modal-style a {
+	color: #333333;
+	text-decoration: none;
+	font-size: 90px;
+}
+
+.modal-style a:hover {
+	color: #636363;
+	/*border-bottom: 1px dashed #636363;	*/
+	text-decoration: none;
+}
+
+.modal-style a:active {
+	color: #8e8e8e;
+	/*border-bottom: 1px dashed #8e8e8e;	*/
+	text-decoration: none;
+}
+
 .center-in-div {
 	text-align: center;
 }
@@ -130,7 +148,7 @@ a {
 .word-tooltip-position {
 	top: -5px;
 	left: 5px;
-	font-size: 15px;
+	font-size: 40px;
 }
 
 .modal-header-style {
