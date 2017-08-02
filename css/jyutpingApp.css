@@ -107,7 +107,7 @@ a {
 .modal-style a {
 	color: #333333;
 	text-decoration: none;
-	font-size: 90px;
+	font-size: 70px;
 }
 
 .modal-style a:hover {
@@ -148,7 +148,7 @@ a {
 .word-tooltip-position {
 	top: -5px;
 	left: 5px;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .modal-header-style {
