@@ -49,7 +49,7 @@ body.modal-open {
  *	@note
  *	Be careful of the difference between max-device-width and max-width
  */
-@media only screen and (max-device-width : 768px) {
+@media only screen and (max-device-width : 769px) {
 /*@media only screen and (max-width : 768px) {*/
 	.disable-backdrop-background {
 		background-color: transparent !important;
@@ -105,8 +105,9 @@ body.modal-open {
 /**
  *	@note
  *	Be careful of the difference between min-device-width and min-width
+ *	Changed to 769 because iPads can't display otherwise. 
  */
-@media screen and (min-device-width : 768px) {
+@media screen and (min-device-width : 769px) {
 /*@media screen and (min-width : 768px) {*/
 	#jyutping-table-layer {
 		width: 1px;
