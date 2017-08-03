@@ -46,6 +46,7 @@ a:focus {
  *	Be careful of the difference between max-device-width and max-width
  */
 @media only screen and (max-device-width : 768px) {
+/*@media only screen and (max-width : 768px) {*/
 	.disable-backdrop-background {
 		background-color: transparent !important;
 	}
@@ -64,6 +65,7 @@ a:focus {
 		text-align: center;
 		border: 1px solid white;
 		color: white;
+		font-size: 30px;
 	}
 
 	#mobile-jyutping-table-layer td div {
@@ -101,6 +103,7 @@ a:focus {
  *	Be careful of the difference between min-device-width and min-width
  */
 @media screen and (min-device-width : 768px) {
+/*@media screen and (min-width : 768px) {*/
 	#jyutping-table-layer {
 		width: 1px;
 		min-width: 100%;
