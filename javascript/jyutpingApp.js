@@ -9,7 +9,7 @@ JyutpingAppCtrl.$inject = ['$scope', '$log', 'JyutpingService', 'JyutpingModalSe
 
 function JyutpingAppCtrl($scope, $log, JyutpingService, JyutpingModalService, SampleWordsService) {
 	//	see if we can fix the auto scroll iframe problem
-	$('body').bind('touchmove', function(e){e.preventDefault()})
+	// $('body').bind('touchmove', function(e){e.preventDefault()}) //	disabled scroll but didn't fix problem
 
 	$scope.initials = JyutpingService.getInitials();
 	$scope.finals = JyutpingService.getFinals();

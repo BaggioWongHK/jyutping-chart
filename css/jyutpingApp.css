@@ -5,15 +5,18 @@ a:focus {
 	outline: none;
 }
 
+/*
+ *	attempts to fix the iframe scrolling problem
+ */
 /*body.modal-open {
     overflow: hidden !important;
     position: fixed !important;
 }*/
 
-body.stop-scrolling {
+/*body.stop-scrolling {
 	height: 100%;
 	overflow: hidden;
-}
+}*/
 
 /*
  *	@template	index.html
