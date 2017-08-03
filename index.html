@@ -2,6 +2,7 @@
 <head>
 	<!--specifying page encoding-->
 	<meta charset="UTF-8">
+	
 	<!--jQuery 3.2.1-->
 	<script src="javascript/lib/jquery-3.2.1.min.js"></script>
 
@@ -38,7 +39,55 @@
 </head>
 
 <body ng-app="JyutpingApp" ng-controller="JyutpingAppCtrl">
-	<div id="jyutping-table-layer">
+	<!-- loading message -->
+	<div class="loading-message fading-text" ng-show="!fadeLoadingMessage">
+		<p>Please wait for a few seconds while the chart loads!</p>
+	</div>
+
+	<!-- mobile app -->
+	<div id="mobile-jyutping-table-layer" ng-init="initialsDisplay=true; fadeLoadingMessage=true" ng-cloak>
+		<!-- initials -->
+		<table ng-show="initialsDisplay">
+			<tr ng-repeat="dummy in getNumber(5) track by $index">
+				<td ng-repeat="dummy in getNumber(4) track by $index">
+					<div 	ng-click="toggleInitialsDisplay(); changeCurrentInitial($event)"
+							initial="{{initials[1 + $parent.$index * 4 + $index]}}">
+						<a 	initial="{{initials[1 + $parent.$index * 4 + $index]}}">
+							{{
+								($parent.$index == 0 && $index == 0) 
+								? "*" : 
+								initials[1 + $parent.$index * 4 + $index]
+							}}
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<!-- finals -->
+		<table ng-show="!initialsDisplay">
+			<tr ng-repeat="dummy in getNumber(9) track by $index">
+				<td ng-repeat="dummy in getNumber(6) track by $index">
+					<div 	ng-click="	toggleInitialsDisplay(); 
+										changeCurrentFinal($event); 
+										openJyutpingModal(currentInitial + currentFinal)
+										"
+							final="{{finals[1 + $parent.$index * 6 + $index]}}">
+
+							<!-- (jyutpingIsEmpty(currentInitial + currentFinal)) 
+										? null
+										:  -->
+						<a 	final="{{finals[1 + $parent.$index * 6 + $index]}}">
+							{{finals[1 + $parent.$index * 6 + $index]}}
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- non-mobile app -->
+	<div id="jyutping-table-layer" ng-cloak>
 		<!-- Jyutping initials -->
 		<table class="table table-bordered" id="jyutping-initials" fix-initials-vertical-scroll>
 			<tr class="fixed-initials-row" id="initials-row">
@@ -63,7 +112,7 @@
 
 					<span ng-click="openJyutpingModal(initial + final)">
 						<a href="#">
-							{{(jyutpingIsEmpty(initial + final)) ? initial + final : "&nbsp;"}}
+							{{(jyutpingIsEmpty(initial + final)) ? "&nbsp;" : initial + final}}
 						</a>
 					</span>
 				</td>
