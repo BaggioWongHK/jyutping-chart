@@ -5,9 +5,14 @@ a:focus {
 	outline: none;
 }
 
-body.modal-open {
+/*body.modal-open {
     overflow: hidden !important;
     position: fixed !important;
+}*/
+
+body.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
 }
 
 /*
@@ -28,6 +33,10 @@ body.modal-open {
 
 .fading-text {
 	animation: fadeOut 1s linear;
+}
+
+.fading-in-div {
+	animation: fadeIn 1s linear;
 }
 
 @keyframes blinker {  
@@ -58,7 +67,7 @@ body.modal-open {
 
 	#mobile-jyutping-table-layer {
 		min-width: 100%;	
-		animation: fadeIn 1s linear;
+/*		animation: fadeIn 1s linear;*/
 	}
 
 	#mobile-jyutping-table-layer table{
