@@ -8,9 +8,95 @@ a:focus {
 /*
  *	@template	index.html
  */
-#jyutping-table-layer {
-	width: 1px;
-	min-width: 100%;
+
+.loading-message {
+	width: 100%;
+	height: 100%;
+	justify-content:center;
+	display:flex;
+	align-items:center;
+	font-family: Georgia, sans-serif;
+	font-size: 16px;
+	position: absolute;
+	z-index: 100;
+}
+
+.fading-text {
+	animation: fadeOut 1s linear;
+}
+
+@keyframes blinker {  
+  30% { opacity: 0; }
+}
+
+@keyframes fadeOut {
+   0% {opacity: 1;}
+   100% {opacity: 0;} 
+} 
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;} 
+} 
+
+ /* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	#mobile-jyutping-table-layer {
+		min-width: 100%;	
+		animation: fadeIn 1s linear;
+	}
+
+	#mobile-jyutping-table-layer table{
+		table-layout: fixed;
+		width: 100%;
+	}
+
+	#mobile-jyutping-table-layer td {
+		text-align: center;
+		border: 1px solid white;
+		color: white;
+	}
+
+	#mobile-jyutping-table-layer td div {
+		background-color: #d41b14;
+		padding: 20px;
+		width: 100%;
+		height: 100%;
+	}
+
+	#mobile-jyutping-table-layer td div:hover {
+		background-color: #f41b14;
+	}
+
+	#mobile-jyutping-table-layer td div:active {
+		background-color: #a41b14;
+	}
+
+	#mobile-jyutping-table-layer a {
+		color: white;
+		display: block;
+		width: 100%;
+	}
+
+	#mobile-jyutping-table-layer a:hover {
+		text-decoration: none;
+	}
+
+	#jyutping-table-layer {
+		display: none;
+	}
+}
+
+@media only screen and (min-width : 768px) {
+	#jyutping-table-layer {
+		width: 1px;
+		min-width: 100%;
+		animation: fadeIn 1s linear;
+	}
+
+	#mobile-jyutping-table-layer {
+		display: none;
+	}
 }
 
 /*
@@ -97,6 +183,17 @@ a {
 	font-size: 30px;
 }
 
+.jyutping-empty-modal p {
+	font-size: 30px;
+	padding: 70px 0px;
+	margin: auto;
+	text-align: center;
+}
+
+.jyutping-empty-modal p span {
+	font-weight: bold;
+}
+
 .modal-style {
 	padding: 0px 20px;
 	font-family: "Crimson Text", "STKaiti", "cwTeXKai", sans-serif;
@@ -112,13 +209,11 @@ a {
 
 .modal-style a:hover {
 	color: #636363;
-	/*border-bottom: 1px dashed #636363;	*/
 	text-decoration: none;
 }
 
 .modal-style a:active {
 	color: #8e8e8e;
-	/*border-bottom: 1px dashed #8e8e8e;	*/
 	text-decoration: none;
 }
 
