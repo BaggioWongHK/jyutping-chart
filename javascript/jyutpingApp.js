@@ -1,6 +1,6 @@
 angular.module('JyutpingApp', 		[
 									'ui.bootstrap', 
-									'ngAnimate',
+									'ngAnimate'
 								])
 
 .controller('JyutpingAppCtrl', JyutpingAppCtrl);
@@ -14,4 +14,27 @@ function JyutpingAppCtrl($scope, $log, JyutpingService, JyutpingModalService, Sa
 	$scope.openJyutpingModal = JyutpingModalService.open;
 
 	$scope.jyutpingIsEmpty = SampleWordsService.isEmpty;
+
+	/**
+	 *	@description
+	 *	This is so that ng-repeat can iterate a fixed number of times. 
+	 */
+	$scope.getNumber = function(num) {
+    	return new Array(num);   
+	}
+
+	$scope.currentInitial = "";
+	$scope.currentFinal = "";
+
+	$scope.changeCurrentInitial = function($event) {
+		$scope.currentInitial = angular.element($event.target).attr("initial");
+	}
+
+	$scope.changeCurrentFinal = function($event) {
+		$scope.currentFinal = angular.element($event.target).attr("final");
+	}
+
+	$scope.toggleInitialsDisplay = function() {
+		$scope.initialsDisplay = !$scope.initialsDisplay;
+	}
 }
