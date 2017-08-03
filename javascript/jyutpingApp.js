@@ -8,6 +8,9 @@ angular.module('JyutpingApp', 		[
 JyutpingAppCtrl.$inject = ['$scope', '$log', 'JyutpingService', 'JyutpingModalService', 'SampleWordsService'];
 
 function JyutpingAppCtrl($scope, $log, JyutpingService, JyutpingModalService, SampleWordsService) {
+	//	see if we can fix the auto scroll iframe problem
+	$('body').bind('touchmove', function(e){e.preventDefault()})
+
 	$scope.initials = JyutpingService.getInitials();
 	$scope.finals = JyutpingService.getFinals();
 
