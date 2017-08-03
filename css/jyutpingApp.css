@@ -41,6 +41,10 @@ a:focus {
 
  /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.disable-backdrop-background {
+		background-color: transparent !important;
+	}
+
 	#mobile-jyutping-table-layer {
 		min-width: 100%;	
 		animation: fadeIn 1s linear;

@@ -7,6 +7,7 @@ function JyutpingModalService($log, $uibModal) {
 	this.open = function(jyutping) {
 		var modalInstance = $uibModal.open({
 			animation: true,
+			backdropClass: "disable-backdrop-background",
 			templateUrl: "partials/JyutpingModal.html",
 			controller: JyutpingModalCtrl,
 			resolve: {
