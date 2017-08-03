@@ -32,17 +32,18 @@ function SampleWordsService($log, sampleWords) {
 
 	/**
 	 *	@description
-	 *	If all tones under jyutping are empty, return true, else false. 
+	 *	If there's one jyutping + tone combo, return false, else true. 
 	 */	
 	this.isEmpty = function(jyutping) {
 		var sampleWord = sampleWords[jyutping.trim()];
 
 		for (tone in sampleWord) {
-			if (sampleWord[tone]["chinese"] != "")
-				return true; 
+			if (sampleWord[tone]["chinese"] != "") {
+				return false; 
+			}
 		}
 
-		return false;
+		return true;
 	} 
 
 	/**

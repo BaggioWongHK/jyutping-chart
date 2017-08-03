@@ -24,6 +24,8 @@ function JyutpingModalCtrl($uibModalInstance, $scope, jyutping, $log, SampleWord
 
 	$scope.jyutping = jyutping;
 
+	$scope.jyutpingIsEmpty = SampleWordsService.isEmpty(jyutping);
+
 	/*
 	 *	@description
 	 *	Get sample word. 
