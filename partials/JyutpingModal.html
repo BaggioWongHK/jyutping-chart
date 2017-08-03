@@ -2,7 +2,7 @@
 	<h3>
 		<span>{{jyutping}}</span>
 		<div class="jyutping-tones" ng-show="!jyutpingIsEmpty">
-			<span class="glyphicon glyphicon-question-sign tones-tooltip-position" tooltip-placement="left" uib-tooltip="{{tonesMessage}}"></span>
+			<span class="glyphicon glyphicon-question-sign tones-tooltip-position" tooltip-placement="bottom" uib-tooltip="{{tonesMessage}}"></span>
 			<div class="btn-group" role="group">
 			  <button type="button" class="btn btn-default" ng-click="toggleTone(1)" ng-disabled="!getSampleWord(jyutping, '1')">1</button>
 			  <button type="button" class="btn btn-default" ng-click="toggleTone(2)" ng-disabled="!getSampleWord(jyutping, '2')">2</button>
@@ -39,7 +39,7 @@
 	<a href="#">
 		{{(jyutpingIsEmpty) ? null : getSampleWord(jyutping, tone)["chinese"]}} 
 	</a>
-		<span class="glyphicon glyphicon-hand-up word-tooltip-position" tooltip-placement="bottom" uib-tooltip="{{wordMessage}}"></span>
+		<span class="glyphicon glyphicon-headphones word-tooltip-position" tooltip-placement="bottom" uib-tooltip="{{wordMessage}}"></span>
 	</p>
 	<p id="sample-jyutping">{{(jyutpingIsEmpty) ? null : getSampleWord(jyutping, tone)["jyutping"]}}</p>
 	<p id="sample-english">{{(jyutpingIsEmpty) ? null : getSampleWord(jyutping, tone)["english"]}}</p>
