@@ -40,7 +40,12 @@ a:focus {
 } 
 
  /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+
+/**
+ *	@note
+ *	Be careful of the difference between max-device-width and max-width
+ */
+@media only screen and (max-device-width : 768px) {
 	.disable-backdrop-background {
 		background-color: transparent !important;
 	}
@@ -91,7 +96,11 @@ a:focus {
 	}
 }
 
-@media only screen and (min-width : 768px) {
+/**
+ *	@note
+ *	Be careful of the difference between min-device-width and min-width
+ */
+@media screen and (min-device-width : 768px) {
 	#jyutping-table-layer {
 		width: 1px;
 		min-width: 100%;
