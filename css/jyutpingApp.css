@@ -59,6 +59,7 @@ body.modal-open {
 	#mobile-jyutping-table-layer {
 		min-width: 100%;	
 		animation: fadeIn 1s linear;
+		font: "Crimson Text", 'STXihei', sans-serif;
 	}
 
 	#mobile-jyutping-table-layer table{
