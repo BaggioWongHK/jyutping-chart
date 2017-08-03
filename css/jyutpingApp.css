@@ -70,7 +70,7 @@ body.modal-open {
 		text-align: center;
 		border: 1px solid white;
 		color: white;
-		font-size: 30px;
+		font-size: 24px;
 	}
 
 	#mobile-jyutping-table-layer td div {
@@ -124,6 +124,11 @@ body.modal-open {
 
 	#mobile-jyutping-table-layer {
 		display: none;
+	}
+
+	.modal-style {
+		padding: 0px 20px;
+		font-family: "Crimson Text", "STKaiti", "cwTeXKai", sans-serif;
 	}
 }
 
@@ -220,15 +225,6 @@ a {
 
 .jyutping-empty-modal p span {
 	font-weight: bold;
-}
-
-.modal-style {
-	padding: 0px 20px;
-	font-family: "Crimson Text", "STKaiti", "cwTeXKai", sans-serif;
-
-			/*font: "Crimson Text", 'STXihei', sans-serif;*/
-	/*font-family: "Crimson Text", "Noto Sans TC", sans-serif;*/
-	
 }
 
 .modal-style a {
