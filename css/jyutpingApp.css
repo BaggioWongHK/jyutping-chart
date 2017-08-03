@@ -104,7 +104,7 @@ body.modal-open {
 
 	.modal-style {
 		padding: 0px 20px;
-		font: "Crimson Text", 'STXihei', sans-serif;
+		font-family: "Crimson Text", 'STXihei', sans-serif;
 		/*font-family: "Crimson Text", "Noto Sans TC", sans-serif;*/
 	}
 }
