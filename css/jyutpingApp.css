@@ -5,6 +5,10 @@ a:focus {
 	outline: none;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 /*
  *	@template	index.html
  */
