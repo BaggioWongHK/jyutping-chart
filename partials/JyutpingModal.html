@@ -2,7 +2,7 @@
 	<h3>
 		<span>{{jyutping}}</span>
 		<div class="jyutping-tones" ng-show="!jyutpingIsEmpty">
-			<span class="glyphicon glyphicon-question-sign tones-tooltip-position" tooltip-placement="bottom" uib-tooltip="{{tonesMessage}}"></span>
+			<span class="glyphicon glyphicon-question-sign tones-tooltip-position" tooltip-placement="right" uib-tooltip="{{tonesMessage}}"></span>
 			<div class="btn-group" role="group">
 			  <button type="button" class="btn btn-default" ng-click="toggleTone(1)" ng-disabled="!getSampleWord(jyutping, '1')">1</button>
 			  <button type="button" class="btn btn-default" ng-click="toggleTone(2)" ng-disabled="!getSampleWord(jyutping, '2')">2</button>
