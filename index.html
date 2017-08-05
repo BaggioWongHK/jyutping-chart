@@ -47,7 +47,7 @@
 	<!-- mobile app -->
 	<div id="mobile-jyutping-table-layer" ng-init="initialsDisplay=true; fadeLoadingMessage=true" ng-cloak>
 		<!-- initials -->
-		<table ng-show="initialsDisplay">
+		<table ng-show="initialsDisplay" class="initials-table table-fade-in">
 			<tr ng-repeat="dummy in getNumber(5) track by $index">
 				<td ng-repeat="dummy in getNumber(4) track by $index">
 					<div 	ng-click="toggleInitialsDisplay(); changeCurrentInitial($event)"
@@ -65,19 +65,25 @@
 		</table>
 
 		<!-- finals -->
-		<table ng-show="!initialsDisplay">
+		<table ng-show="!initialsDisplay" class="finals-table table-fade-in">
 			<tr ng-repeat="dummy in getNumber(9) track by $index">
 				<td ng-repeat="dummy in getNumber(6) track by $index">
 					<div 	ng-click="	toggleInitialsDisplay(); 
 										changeCurrentFinal($event); 
 										openJyutpingModal(currentInitial + currentFinal)
 										"
-							final="{{finals[1 + $parent.$index * 6 + $index]}}">
+							final="{{finals[1 + $parent.$index * 6 + $index]}}"
+							ng-class="{'not-jyutping-div': jyutpingIsEmpty(
+										currentInitial + finals[1 + $parent.$index * 6 + $index])}"
+							>
 
 							<!-- (jyutpingIsEmpty(currentInitial + currentFinal)) 
 										? null
 										:  -->
-						<a 	final="{{finals[1 + $parent.$index * 6 + $index]}}">
+						<a 	final="{{finals[1 + $parent.$index * 6 + $index]}}"
+							ng-class="{'not-jyutping-a': jyutpingIsEmpty(
+										currentInitial + finals[1 + $parent.$index * 6 + $index])}"
+						>
 							{{finals[1 + $parent.$index * 6 + $index]}}
 						</a>
 					</div>
