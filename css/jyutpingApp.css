@@ -130,7 +130,7 @@ a:focus {
 	}
 
 	#mobile-jyutping-table-layer td div:hover {
-		background-color: #f41b14;
+		/*background-color: #f41b14;*/
 	}
 
 	#mobile-jyutping-table-layer td div:active {
