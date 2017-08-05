@@ -137,6 +137,10 @@ a:focus {
 		background-color: #a41b14;
 	}
 
+	#mobile-jyutping-table-layer td div:visited {
+		background-color: #d41b14;
+	}
+
 	#mobile-jyutping-table-layer a {
 		color: white;
 		display: block;
