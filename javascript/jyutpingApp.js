@@ -31,10 +31,12 @@ function JyutpingAppCtrl($scope, $log, JyutpingService, JyutpingModalService, Sa
 
 	$scope.changeCurrentInitial = function($event) {
 		$scope.currentInitial = angular.element($event.target).attr("initial");
+		$scope.$apply();
 	}
 
 	$scope.changeCurrentFinal = function($event) {
 		$scope.currentFinal = angular.element($event.target).attr("final");
+		$scope.$apply();
 	}
 
 	$scope.toggleInitialsDisplay = function() {
