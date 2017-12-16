@@ -5,8 +5,8 @@ angular.module('JyutpingApp')
  *	@description
  *	JSON structure
  *	sampleWords[jyutping][tone][("chinese"|"jyutping"|"english")]
- *	
- *	Empty entries sampleWords[jyutping][tone] are represented by 
+ *
+ *	Empty entries sampleWords[jyutping][tone] are represented by
  *	{} or {"chinese": ""}
  */
 function sampleWordsFunc() {
@@ -204,7 +204,7 @@ var sampleWords = {
 			"english": "a kind of prawn"
 		},
 		"2": {
-			"chinese": "哈",
+			"chinese": "吓",
 			"jyutping": "haa2",
 			"english": "something you say in mild surprise"
 		},
@@ -243,7 +243,9 @@ var sampleWords = {
 			"chinese": ""
 		},
 		"5": {
-			"chinese": "也"
+			"chinese": "也",
+			"jyutping": "jaa5",
+			"english": "also (written)"
 		},
 		"6": {
 			"chinese": "廿個人",
@@ -1669,7 +1671,7 @@ var sampleWords = {
 		},
 		"2": {
 			"chinese": "減小",
-			"jyutping": "gaam1 siu2",
+			"jyutping": "gaam2 siu2",
 			"english": "to reduce"
 		},
 		"3": {
@@ -2339,7 +2341,9 @@ var sampleWords = {
 			"chinese": ""
 		},
 		"3": {
-			"chinese": ""
+			"chinese": "蚊赧",
+			"jyutping": "man1 naan3",
+			"english": "swelling from mosquito bite"
 		},
 		"4": {
 			"chinese": "左右為難",
@@ -2347,9 +2351,7 @@ var sampleWords = {
 			"english": "to be in a dilemma"
 		},
 		"5": {
-			"chinese": "蚊赧",
-			"jyutping": "man1 naan3",
-			"english": "swelling from mosquito bite"
+			"chinese": ""
 		},
 		"6": {
 			"chinese": "災難",
@@ -2427,7 +2429,7 @@ var sampleWords = {
 		},
 		"4": {
 			"chinese": "潺",
-			"jyutping": "saan3",
+			"jyutping": "saan4",
 			"english": "to be in a weak state especially when sick"
 		},
 		"5": {
@@ -2568,8 +2570,8 @@ var sampleWords = {
 	"caang": {
 		"1": {
 			"chinese": "撐船",
-			"jyutping": "rowing a boat",
-			"english": ""
+			"jyutping": "caang1 syun4",
+			"english": "rowing a boat"
 		},
 		"2": {
 			"chinese": "橙",
@@ -2634,7 +2636,7 @@ var sampleWords = {
 	"gaang": {
 		"1": {
 			"chinese": "耕田",
-			"jyutping": "gaan1 tin4",
+			"jyutping": "gaang1 tin4",
 			"english": "to farm"
 		},
 		"2": {
@@ -2980,7 +2982,9 @@ var sampleWords = {
 			"chinese": ""
 		},
 		"2": {
-			"chinese": ""
+			"chinese": "填鴨式教育",
+			"jyutping": "tin4 aap2 sik1 gaau3 juk6",
+			"english": "spoon feeding education"
 		},
 		"3": {
 			"chinese": "燒鴨",
@@ -3089,7 +3093,7 @@ var sampleWords = {
 		},
 		"2": {
 			"chinese": "萬字夾",
-			"jyutping": "maan6 si6 gaap2",
+			"jyutping": "maan6 zi6 gaap2",
 			"english": "paper clip"
 		},
 		"3": {
@@ -3511,7 +3515,7 @@ var sampleWords = {
 		"3": {
 			"chinese": "發達",
 			"jyutping": "faat3 daat6",
-			"english": "developped (as in country)"
+			"english": "developed (as in country)"
 		},
 		"4": {
 			"chinese": ""
@@ -3868,7 +3872,7 @@ var sampleWords = {
 	"baak": {
 		"1": {
 			"chinese": "啪紐",
-			"jyutping": "paak1 lau2",
+			"jyutping": "baak1 lau2",
 			"english": "to pop a button in place"
 		},
 		"2": {
@@ -3905,7 +3909,7 @@ var sampleWords = {
 		"3": {
 			"chinese": "擦膠",
 			"jyutping": "caak3 gaau1",
-			"english": ""
+			"english": "rubber; eraser"
 		},
 		"4": {
 			"chinese": ""
@@ -4521,7 +4525,7 @@ var sampleWords = {
 		"3": {
 			"chinese": "契弟",
 			"jyutping": "kai3 dai6",
-			"english": "godbrother"
+			"english": "bastard (vulgar)"
 		},
 		"4": {
 			"chinese": ""
@@ -4576,7 +4580,7 @@ var sampleWords = {
 		},
 		"5": {
 			"chinese": "禮儀",
-			"jyutping": "lai4 ji4",
+			"jyutping": "lai5 ji4",
 			"english": "etiquette"
 		},
 		"6": {
@@ -5262,7 +5266,7 @@ var sampleWords = {
 			"english": "thief"
 		},
 		"2": {
-			"chinese": "透氣",
+			"chinese": "唞氣",
 			"jyutping": "tau2 hei3",
 			"english": "to catch one's breath"
 		},
@@ -5511,7 +5515,7 @@ var sampleWords = {
 		},
 		"2": {
 			"chinese": "砍頭",
-			"jyutping": "ham1 tau4",
+			"jyutping": "ham2 tau4",
 			"english": "to hit one's head (esp. against a wall)"
 		},
 		"3": {
@@ -6228,9 +6232,9 @@ var sampleWords = {
 			"chinese": ""
 		},
 		"6": {
-			"chinese": "柔韌",
-			"jyutping": "jau4 jan6",
-			"english": "soft and flexible"
+			"chinese": "煙韌",
+			"jyutping": "jin1 ngan6",
+			"english": "chewy"
 		}
 	},
 	"pan": {
@@ -6958,7 +6962,7 @@ var sampleWords = {
 			"chinese": ""
 		},
 		"6": {
-			"chinese": "及",
+			"chinese": "𥄫",
 			"jyutping": "gap6",
 			"english": "to stare at (usually girls, or people)"
 		}
@@ -8723,7 +8727,7 @@ var sampleWords = {
 		},
 		"2": {
 			"chinese": "緋聞",
-			"jyutping": "fei1 man4",
+			"jyutping": "fei2 man4",
 			"english": "scandal"
 		},
 		"3": {
@@ -10027,7 +10031,7 @@ var sampleWords = {
 		},
 		"6": {
 			"chinese": "揈",
-			"jyutping": "",
+			"jyutping": "feng6",
 			"english": "to splurge"
 		}
 	},
@@ -11185,9 +11189,7 @@ var sampleWords = {
 	},
 	"zek": {
 		"1": {
-			"chinese": "唧都唔笑",
-			"jyutping": "zek1 dou1 m4 siu3",
-			"english": "someone who's (too) serious"
+			"chinese": ""
 		},
 		"2": {
 			"chinese": ""
@@ -11319,7 +11321,7 @@ var sampleWords = {
 		},
 		"4": {
 			"chinese": "飛哩啡呢",
-			"jyutping": "fi4 li4 fe4 le4",
+			"jyutping": "fi4 li1 fe4 le4",
 			"english": "garbling, someone who talks rapidly but not very articulately"
 		},
 		"5": {
@@ -12764,7 +12766,7 @@ var sampleWords = {
 	"gin": {
 		"1": {
 			"chinese": "堅定",
-			"jyutping": "gin1 dingy",
+			"jyutping": "gin1 ding6",
 			"english": "firm (in one's resolve)"
 		},
 		"2": {
@@ -13189,7 +13191,7 @@ var sampleWords = {
 		},
 		"2": {
 			"chinese": "請問",
-			"jyutping": "ceng2 man6",
+			"jyutping": "cing2 man6",
 			"english": "excuse me, may I ask...?"
 		},
 		"3": {
@@ -13333,7 +13335,7 @@ var sampleWords = {
 		"1": {
 			"chinese": "英國",
 			"jyutping": "jing1 gwok3",
-			"english": "England"
+			"english": "England, the United Kingdom"
 		},
 		"2": {
 			"chinese": "影相",
@@ -13754,7 +13756,7 @@ var sampleWords = {
 		},
 		"3": {
 			"chinese": "打劫",
-			"jyutping": "daa2 gip6",
+			"jyutping": "daa2 gip3",
 			"english": "to rob"
 		},
 		"4": {
@@ -14155,7 +14157,7 @@ var sampleWords = {
 		},
 		"6": {
 			"chinese": "秩序",
-			"jyutping": "dit3 zeoi6",
+			"jyutping": "dit6 zeoi6",
 			"english": "order (as in order in society)"
 		}
 	},
@@ -14491,9 +14493,9 @@ var sampleWords = {
 	},
 	"zit": {
 		"1": {
-			"chinese": "唧",
-			"jyutping": "zek1",
-			"english": "Cantonese final particle"
+			"chinese": "唧都唔笑",
+			"jyutping": "zit1 dou1 m4 siu3",
+			"english": "someone who's (too) serious"
 		},
 		"2": {
 			"chinese": ""
@@ -14934,7 +14936,7 @@ var sampleWords = {
 	"zik": {
 		"1": {
 			"chinese": "即刻",
-			"jyutping": "jik1 hak1",
+			"jyutping": "zik1 hak1",
 			"english": "immediately"
 		},
 		"2": {
@@ -14969,7 +14971,7 @@ var sampleWords = {
 		},
 		"4": {
 			"chinese": "咿咿哦哦",
-			"jyutping": "ji4 ji4 o4 o4",
+			"jyutping": "ji4 ji1 o4 o4",
 			"english": "someone who nags on and on about trivial matters"
 		},
 		"5": {
@@ -15007,7 +15009,7 @@ var sampleWords = {
 		"1": {
 			"chinese": "初一",
 			"jyutping": "co1 jat1",
-			"english": "first day of the Chinese New Year"
+			"english": "first day of a lunar month"
 		},
 		"2": {
 			"chinese": "清楚",
@@ -15088,7 +15090,7 @@ var sampleWords = {
 	"go": {
 		"1": {
 			"chinese": "哥哥",
-			"jyutping": "go2 go1",
+			"jyutping": "go4 go1",
 			"english": "elder brother"
 		},
 		"2": {
@@ -15978,7 +15980,7 @@ var sampleWords = {
 	"cou": {
 		"1": {
 			"chinese": "粗",
-			"jyutping": "cou6",
+			"jyutping": "cou1",
 			"english": "thick"
 		},
 		"2": {
@@ -16885,7 +16887,7 @@ var sampleWords = {
 		},
 		"2": {
 			"chinese": "榜樣",
-			"jyutping": "bon2 joeng6",
+			"jyutping": "bong2 joeng6",
 			"english": "role model"
 		},
 		"3": {
@@ -18958,7 +18960,7 @@ var sampleWords = {
 		},
 		"2": {
 			"chinese": "新娘",
-			"jyutping": "san1 noeng4",
+			"jyutping": "san1 noeng2",
 			"english": "bride"
 		},
 		"3": {
@@ -20386,7 +20388,7 @@ var sampleWords = {
 		},
 		"6": {
 			"chinese": "順利",
-			"jyutping": "seon3 lei6",
+			"jyutping": "seon6 lei6",
 			"english": "smoothly"
 		}
 	},
@@ -22103,9 +22105,7 @@ var sampleWords = {
 			"chinese": ""
 		},
 		"2": {
-			"chinese": "筍盤",
-			"jyutping": "seon2 pun2",
-			"english": "a property sold at a great price"
+			"chinese": ""
 		},
 		"3": {
 			"chinese": ""
@@ -24176,9 +24176,9 @@ var sampleWords = {
 	},
 	"jyun": {
 		"1": {
-			"chinese": "圓圈",
-			"jyutping": "jyun4 hyun1",
-			"english": "circle (shape)"
+			"chinese": "冤枉",
+			"jyutping": "jyun1 wong2",
+			"english": "to accuse wrongly"
 		},
 		"2": {
 			"chinese": "屋苑",
