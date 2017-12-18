@@ -2786,7 +2786,7 @@ var sampleWords = {
 			"english": "A/C"
 		},
 		"6": {
-			"chinese": "冚𠾴唥",
+			"chinese": "冚唪唥",
 			"jyutping": "ham6 baang6 laang6",
 			"english": "all"
 		}
