@@ -24376,7 +24376,7 @@ var sampleWords = {
 		},
 		"4": {
 			"chinese": "船",
-			"jyutping": "synu4",
+			"jyutping": "syun4",
 			"english": "boat"
 		},
 		"5": {
